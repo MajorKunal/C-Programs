@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="codepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;800&family=Cinzel+Decorative:wght@400;700&family=Poppins:wght@500;600&family=Sometype+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+    <div class="banner">
+        <!-- <div class="navbar">
+            <p class="logo">C Programs</p>
+            <ul class="nav-menu">
+                <li><a href="index.html"><b>HOME</b></a></li>
+                <li><a href="#about"><b>ABOUT</b></a></li>
+            </ul>
+        </div> -->
+        <div class="programs-section">
+            <h2 style="color: white;">C Programs</h2>
+            <ul class="program-list">
+                <li>
+                    <a href="#" onclick="toggleProgram('program1')">1.Hello World</a>
+                    <div id="program1" class="program-description">
+                        <p>Print Hello World in c</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                            #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            
+                            void main(){
+                                printf("Hello this is my first program !");
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program2')">2.Display a number by user input</a>
+                    <div id="program2" class="program-description">
+                        <p>Display a number that number is enter by user !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num;
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                                
+                                printf("display number is %d",num);
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program3')">3.Addition of three numbers with user input</a>
+                    <div id="program3" class="program-description">
+                        <p>Addition of three numbers with user input!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, num2 , num3, sum;
+                            
+                                printf("Enter three numbers :");
+                                scanf_s("%d,%d,%d", &num1, &num2, &num3);
+                            
+                                sum = num1 * num2 * num3;
+                                printf("%d", sum);
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program4')">4.Substration of three numbers with user input</a>
+                    <div id="program4" class="program-description">
+                        <p>Addition of three numbers with user input!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, num2, sum;
+                                printf("Enter  numbers for Substratio\n");
+                                scanf_s("%d%d", &num1, &num2);
+                                sum = num1 - num2;
+                                printf("additon is :%d", sum);
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program5')">5.Area of circle</a>
+                    <div id="program5" class="program-description">
+                        <p>Area of circle!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int r;
+                                const float pi = 3.14;
+                            
+                                printf("Enter radius of circle :");
+                                scanf_s("%d", &r);
+                            
+                                float area = pi *(r*r);
+                                printf("area of circle is : %.2f", area); 
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program6')">6.Display quoeteint and reminder by user input</a>
+                    <div id="program6" class="program-description">
+                        <p>Display quoeteint and reminder by user input!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int numerator, denominator;
+                            
+                                printf("Enter Numerator :");
+                                scanf_s("%d", &numerator);
+                            
+                                printf("Enter Denominator :");
+                                scanf_s("%d", &denominator);
+                            
+                                int quoteint = numerator / denominator;
+                                int reminder = numerator % denominator;
+                            
+                                printf("quoeteint is : %d \n",quoteint);
+                                printf("reminder is : %d  \n", reminder);
+                            
+                                _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program7')">7.Program for Simple interest</a>
+                    <div id="program7" class="program-description">
+                        <p>Program for Simple interest!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int p, n, r, simpleinterest;
+                                printf("Enter principle amount :");
+                                scanf_s("%d", &p);
+                                printf("Enter no of years :");
+                                scanf_s("%d", &n);
+                                printf("Enter rate of interest :");
+                                scanf_s("%d", &r);
+                            
+                                simpleinterest = (p *n * r )/ 100;
+                                printf("Your simple interest is %d ", simpleinterest);
+                                _getch();
+                            
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program8')">8.Check marks Eligibility</a>
+                    <div id="program8" class="program-description">
+                        <p>Check marks Eligibility using Desiion statements!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int mark;
+                                                           
+                                printf("Enter marks you obtain :");
+                                scanf_s("%d", &mark);
+                                                          
+                                if (mark >= 60){
+                                    printf("You are eligible !");
+                                }
+                                else {
+                                    printf("You are not eligible ");
+                                }
+                           _getch();
+                            }</code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program9')">9.Print ASCII values</a>
+                    <div id="program9" class="program-description">
+                        <p>Print ASCII values using Desiion statements!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                char ch;
+                            
+                                printf("Enter a digit :");
+                                ch =getchar();
+                            
+                                fflush(stdin);
+                            
+                                if (ch >= 48 && ch <=57){
+                                    printf("You have enter a digit !");
+                                }
+                                else if (ch >= 65 && ch <= 90){
+                                    printf("You have enter a capital letter !");
+                                }
+                                else if (ch >= 97 && ch <= 122){
+                                    printf("You have enter a small letter !");
+                                }
+                                else if (ch > 48 && ch < 122){
+                                    printf("its a special character  !");
+                                }
+                                else {
+                            
+                                    printf("its is special symbol ");
+                                }
+                                _getch();
+                            }  </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program10')">10.Check Gender,Age and calculate interest</a>
+                    <div id="program10" class="program-description">
+                        <p>Print Check Gender,Age and calculate interest!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int age;
+                                char gender;
+                            
+                                printf("Enter your age :");
+                                scanf_s("%d", &age);
+                            
+                                fflush(stdin);
+                                if (age >= 60){
+                                    printf("Enter your gender :");
+                                    gender = getchar();
+                                    if ( gender =='f'){
+                                        printf("Your interest is 9.75%");
+                                    }
+                                    else if (gender == 'm')
+                                    {
+                                        printf("Your interest is 9.5%");
+                                    }
+                                    else 
+                                    {
+                                        printf("enter valid gender !");
+                                    }
+                                }
+                                else if (age <= 0){
+                                    printf("Enter valid age !");
+                                }
+                                else {
+                                    printf("Your interest is 9 %");
+                                }
+                                _getch();
+                            
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program11')">11.Simple calculator using Switch case</a>
+                    <div id="program11" class="program-description">
+                        <p>Simple calculator !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            #include <stdio.h>
+                                #include <conio.h>
+                                
+                                void main(){
+                                    int num1, num2 ;
+                                    char option;
+                                    int result;
+                                
+                                    printf("Enter fisrt number :");
+                                    scanf_s("%d", &num1);
+                                
+                                    printf("Enter second number :");
+                                    scanf_s("%d", &num2);
+                                
+                                    printf("Enter your choice :\n A)Addition \n B) Substration \n C) Multiplication \n D) Division\n");
+                                    fflush(stdin);
+                                    option = getchar();
+                                
+                                    switch (option)
+                                    {
+                                    case 'A': 
+                                        result = num1 + num2;
+                                        printf("additon is :%d", result);
+                                        break;
+                                    case 'B':
+                                        result = num1 - num2;
+                                        printf("Substraction is :%d", result);
+                                        break;
+                                    case 'C':
+                                        result = num1 * num2;
+                                        printf("Multiplication is :%d", result);
+                                        break;
+                                    case 'D':
+                                        if (num2 != 0) {
+                                            result = num1 / num2;
+                                            printf("division is :%d", result);
+                                        }
+                                        else {
+                                            printf("Cant divid by zero !");
+                                        }
+                                        break;
+                                
+                                    default:
+                                        printf("Invalid input");
+                                        
+                                    }
+                                    _getch();
+                                } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program12')">11.Check Even-Odd using Switch case</a>
+                    <div id="program12" class="program-description">
+                        <p>Even-Odd !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num ,option,sqr;
+                                
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                            
+                                printf("Enter choice :\n 1) To check even-odd \n 2) To check positive-negative \n 3) To calculate square \n");
+                                scanf_s("%d", &option);
+                            
+                                switch (option)
+                                {
+                                    case 1:
+                                        if (num % 2 == 0){
+                                            printf("Number is even");
+                                        }
+                                        else {
+                                            printf("Number is odd");
+                                        }
+                                        break;
+                                    case 2 :
+                                        if (num < 0 || num == 0){
+                                            printf("Number is not positive");
+                                        }
+                                        else {
+                                            printf("Number is positive ");
+                                        }    
+                                        break;
+                                    case 3:
+                                        sqr = num * num;
+                                        printf("square of %d is :%d",num, sqr);
+                                        break;
+                                    default:
+                                        printf("Invalid input");
+                                    
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program13')">13.calculate Selling and Cost Price </a>
+                    <div id="program13" class="program-description">
+                        <p>Sale cost !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int cost_price;
+                                int sell_price;
+                            
+                                printf("Enter cost price :");
+                                scanf_s("%d", &cost_price);
+                            
+                                printf("Enter selling price :");
+                                scanf_s("%d", &sell_price);
+                            
+                                if (cost_price >= sell_price){
+                                    printf("Your are in loss !");
+                                }
+                                else {
+                                    printf("You are in profit !");
+                                }
+                                _getch();
+                            
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program14')">14.Check Number either divisible by 2 and 4 </a>
+                    <div id="program14" class="program-description">
+                        <p>divisible by 2 and 4!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num;
+                                printf("Enter a number to check even or odd :");
+                                scanf_s("%d", &num);
+                            
+                                if (num % 2 == 0 || num % 4 ==0){
+                                    printf("%d is even and divisible by four", num);
+                                }
+                                else {
+                                    printf("%d is odd", num);
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program15')">15.Check Even-odd using Ternary operator </a>
+                    <div id="program15" class="program-description">
+                        <p>use of ternary operator!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, even;
+                                printf("Enter the number :");
+                                scanf_s("%d", &num1);
+                                even = (num1 % 2 == 0 )? printf("even") : printf("odd");
+                                
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program16')">16.Check Student Grade using Conditions </a>
+                    <div id="program16" class="program-description">
+                        <p>if-else !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int total_marks;
+                            
+                                printf("Enter Your marks : ");
+                                scanf_s("%d", &total_marks);
+                            
+                                if (total_marks < 0  )&&( total_marks > 100){
+                                    printf("invalid input !");
+                                }
+                                else if (total_marks >= 75  ){
+                                    printf("Congrats You have got A grade !");
+                                }
+                            
+                                else if (total_marks >= 60){
+                                    printf("Congrats You have got B grade !");
+                                }
+                                else if (total_marks >= 40){
+                                    printf("Congrats You have got c grade !");
+                                }
+                                else if (total_marks < 40)
+                                {
+                                    printf("Sorry you have get F grade !");
+                                }
+                            
+                            
+                                else {
+                                    printf("input valid marks !");
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program17')">17.Check Number graterthan or equal to </a>
+                    <div id="program17" class="program-description">
+                        <p> Nested if-else !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1,num2;
+                            
+                                printf("Enter first number to check :");
+                                scanf_s("%d", &num1);
+                            
+                                printf("Enter second number to check :");
+                                scanf_s("%d", &num2);
+                            
+                                if (num1 == num2){
+                                    printf("Given numbers are equal !");
+                                }
+                                else if (num1 > num2){
+                                    printf("%d is greater than num 2", num1);
+                                }
+                                else {
+                                    printf("%d is greater ", num2);
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program18')">18.Check Year is Leap or Not</a>
+                    <div id="program18" class="program-description">
+                        <p> Conditional operators !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int year;
+                            
+                                printf("Enter your birth year :");
+                                scanf_s("%d", &year);
+                            
+                                if (year % 4 == 0 || year % 400 == 0 && year % 100 != 0){
+                                    printf("This is leap year !");
+                                }
+                                else
+                                {
+                                    printf("it is not leap year !");
+                            
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program19')">19.Check enter letter is vowel or not</a>
+                    <div id="program19" class="program-description">
+                        <p> Conditional operators !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main() {
+                                char ch;
+                            
+                                printf("please enter a character :");
+                                ch = getchar();
+                                
+                                fflush(stdin);
+                            
+                                if (ch == 'a'|| ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U' )
+                                {
+                                    printf("You have enter a vowel");
+                                }
+                                else {
+                                    printf("You have enter a consonent ");
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program20')">20.Switch case : option base program</a>
+                    <div id="program20" class="program-description">
+                        <p> switch-case !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                char option;
+                            
+                                printf("Enter your choice :\n E for English \n M for marathi \n H for hindi\n");
+                                option = getchar();
+                            
+                                switch (option)
+                                {
+                                case 'E': printf("You have select English");
+                                    break;
+                                case 'H': printf("You have selected Hindi");
+                                    break;
+                                case 'M': printf("You have Selected Marathi ");
+                                    break;
+                                default: printf("Invalid choice");
+                                    break;
+                                }
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program21')">21.Ternary Operator :find Maximum</a>
+                    <div id="program21" class="program-description">
+                        <p> Ternary Operator !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, num2, max;
+                                printf("Enter the two numbers :");
+                                scanf_s("%d,%d", &num1, &num2);
+                                max = (num1 > num2 ? num1 : num2);
+                                printf("largest number is %d", max);
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program22')">22.Ternary Operator :find Maximum</a>
+                    <div id="program22" class="program-description">
+                        <p> Ternary Operator !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, num2, max;
+                                printf("Enter the two numbers :");
+                                scanf_s("%d,%d", &num1, &num2);
+                                max = (num1 > num2 ? num1 : num2);
+                                printf("largest number is %d", max);
+                                _getch();
+                            } </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program22')">22.Loops : check number wheather it is multiply of 5</a>
+                    <div id="program22" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num;
+                            
+                                while (1)
+                                {
+                                    printf("Enter a number to check (for exiting enter 0) :");
+                                    scanf_s("%d", &num);
+                            
+                                    if (num == 0){
+                                        printf("Enter 0 to exit :");
+                                        exit(0);
+                                    }
+                                if (num % 5 == 0){
+                                    printf("%d is multiply of 5\n",num);
+                                }
+                                else {
+                                    printf("%d is not multiply of 5\n",num);
+                                }}
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program23')">23.Do while loop : Addition of two numbers</a>
+                    <div id="program23" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num1, num2, sum = 0;
+                                char choice;
+                            
+                                fflush(stdin);
+                                do {
+                                    printf("\nEnter first number :");
+                                    scanf_s("%d", &num1);
+                                    printf("Enter second Number :");
+                                    scanf_s("%d", &num2);
+                                    sum = num1 + num2;
+                                    printf("sum is :%d", sum);
+                                    printf("\nDo you want to continue :");
+                                    fflush(stdin);
+                                    choice = _getche();
+                                } while (choice == 'y' || choice == 'Y');
+                                
+                                
+                                
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program24')">24.while loop : Check Armstrong number</a>
+                    <div id="program24" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num ,originalNum,reminder,reuslt=0;
+                                printf("Enter a number to check :");
+                                scanf_s("%d", &num);
+                            
+                                originalNum = num;
+                            
+                            
+                                while (originalNum != 0)
+                                {
+                                    reminder = originalNum % 10;
+                                    reuslt += reminder * reminder * reminder; 
+                                    originalNum /= 10;
+                                }
+                                if (reuslt == num){
+                                    printf("%d is an armstrong number ", num);
+                                }
+                                else {
+                                    printf("%d is not a armstrong  number ",num);
+                                }
+                            
+                                _getch();
+                            }     
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program25')">25.for loop :print char series </a>
+                    <div id="program25" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int j;
+                                char c;
+                            
+                                for (c = 65, j = 65; c >= 1, j <= 90; c++, j++){
+                                    printf("%c %d \n", c, j);
+                                }
+                                _getch();
+                            }     
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program26')">26.Do while loop :Simple Calculator </a>
+                    <div id="program26" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main() {
+
+                                int num1, num2;
+                                char option;
+                                int result;
+                                char choice;
+                            
+                                do
+                                {
+                                    printf("Enter fisrt number :");
+                                    scanf_s("%d", &num1);
+                            
+                                    printf("Enter second number :");
+                                    scanf_s("%d", &num2);
+                            
+                                    printf("Enter your choice :\n A)Addition \n B) Substration \n C) Multiplication \n D) Division\n");
+                                    fflush(stdin);
+                                    option = getchar();
+                            
+                                    switch (option)
+                                    {
+                                    case 'A':
+                                        result = num1 + num2;
+                                        printf("additon is :%d", result);
+                                        break;
+                                    case 'B':
+                                        result = num1 - num2;
+                                        printf("Substraction is :%d", result);
+                                        break;
+                                    case 'C':
+                                        result = num1 * num2;
+                                        printf("Multiplication is :%d", result);
+                                        break;
+                                    case 'D':
+                                        if (num2 != 0) {
+                                            result = num1 / num2;
+                                            printf("division is :%d", result);
+                                        }
+                                        else {
+                                            printf("Cant divid by zero !");
+                                        }
+                                        break;
+                            
+                                    default:
+                                        printf("Invalid input");
+                                    }
+                                    printf("\nDo you want to continue enter 'y' or 'Y'\n");
+                                    fflush(stdin);
+                                    choice = getchar();
+                                } while (choice == 'y' || choice == 'Y');
+                            
+                                _getch();
+                            }    
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program27')">27.Do while loop :Products bills system </a>
+                    <div id="program27" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int total=0, price;
+                            
+                                do {
+                                    printf("Enter price of product :");
+                                    scanf_s("%d", &price);
+                                    total = total + price;
+                                } while (price > 0);
+                                printf("Total of the product is :%d", total);
+                                _getch();
+                            }  
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program28')">28.Do while loop :Factorial  </a>
+                    <div id="program28" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, i,fact=1;
+                            
+                                for (num = 2; num <= 7; num++){
+                                    
+                                    for (i = num; i >= num; i--){
+                                        fact = fact * i;
+                                        printf("%d ", fact);
+                                    }
+                                }
+                                _getch();
+                            } 
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program29')">29.Do while loop : Average of marks </a>
+                    <div id="program29" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int i, marks, total=0 ,avg;
+                            
+                            
+                                for (i = 1; i <= 5; i++){
+                                    printf("Enter your marks :");
+                                    scanf_s("%d", &marks);
+                                    total = total + marks;
+                                }
+                                avg= total / 5;
+                                printf("Average of your marks is :%d", avg);
+                            
+                                _getch();
+                            
+                            } 
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program30')">30.for loop : print lower and upper case </a>
+                    <div id="program30" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int i,lower, upper;
+                            
+                                printf("Enter first number :");
+                                scanf_s("%d", &lower);
+                            
+                                printf("Enter first number :");
+                                scanf_s("%d", &upper);
+                            
+                                for ( i = lower; upper >= i; i = i + 3){
+                                    printf(" 
+                                        %d ", i);
+                                    
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program31')">31.for loop : print table of given number</a>
+                    <div id="program31" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, i, table;
+                            
+                                for (num = 2; num <= 9; num++){
+                                    printf("\n");
+                                    for (i = 1; i <= 10; i++){
+                                        table = num * i;
+                                        printf("%d x %d = %d\n", num, i, table);
+                                    }
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program32')">32.pattern :rectangle </a>
+                    <div id="program32" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int i, j;
+                            
+                                for (i = 1; i <= 5; i++){  //rows
+                                    printf("\n");
+                                    for (j = 1; j <=3; j++){ //columns
+                                        printf(" * ");
+                            
+                                    }
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program33')">33.pattern Program </a>
+                    <div id="program33" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int i, j,count=1;
+                            
+                                for (i = 1; i <= 4; i++){  //rows
+                                    printf("\n");
+                                    for (j = 1; j <= i; j++){ //columns
+                                        printf(" %d ",count );
+                                        count++;
+                            
+                                    }
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program34')">34.Prime Number </a>
+                    <div id="program34" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int i, num, counter = 0;
+                            
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                            
+                                i = 2;
+                                while (num-1 >= i)
+                                {
+                                    if (num % i == 0){
+                                        printf("Its not a prime number ");
+                                        break;
+                                    }
+                                    else {
+                                        counter++;
+                                    }
+                                    i++;
+                                }
+                                if (counter == num - 2){
+                                    printf("it is a prime number !");
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program35')">35.reverse number </a>
+                    <div id="program35" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, originalNum, reminder, reverse=0;
+                            
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                            
+                                originalNum = num;
+                            
+                                while (num != 0)
+                                {
+                                    reminder = num % 10;
+                                    reverse = reverse * 10 + reminder;
+                                    num /= 10;
+                                }
+                                if (originalNum == reverse){
+                                    printf("Original number and reverse number is same ");
+                                }
+                                else {
+                                    printf("Original number and reverse numbers are not same ");
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program36')">36.reverse number </a>
+                    <div id="program36" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, originalNum, reminder, reverse=0;
+                            
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                            
+                                originalNum = num;
+                            
+                                while (num != 0)
+                                {
+                                    reminder = num % 10;
+                                    reverse = reverse * 10 + reminder;
+                                    num /= 10;
+                                }
+                                if (originalNum == reverse){
+                                    printf("Original number and reverse number is same ");
+                                }
+                                else {
+                                    printf("Original number and reverse numbers are not same ");
+                                }
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program37')">37.Sum using loop </a>
+                    <div id="program37" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num = 1, sum = 0;
+                            
+                                while (num > 0)
+                                {
+                                    printf("Enter a number :");
+                                    scanf_s("%d", &num);
+                                    sum = sum + num;
+                            
+                                }
+                                printf("Sum is :%d", sum);
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program38')">38.Sum of digits </a>
+                    <div id="program38" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, sum = 0,last_digit;
+                            
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                            
+                                while (num != 0)
+                                {
+                                    last_digit = num % 10;
+                                    sum += last_digit;
+                                    num /= 10;	
+                                }
+                                printf("%d ",sum);
+                            
+                                _getch();
+                            
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program39')">39.multiplication of base and power </a>
+                    <div id="program39" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int base, index, result = 1;
+                            
+                                printf("Enter base :");
+                                scanf_s("%d", &base);
+                            
+                                printf("Enter index :");
+                                scanf_s("%d", &index);
+                            
+                                while (index >= 1)
+                                {
+                                    result = result * base;
+                                    index--;
+                                }
+                                printf("%d", result);
+                                _getch();
+                            
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program40')">40.multiplication of base and power </a>
+                    <div id="program40" class="program-description">
+                        <p> Loops!</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int base, index, result = 1;
+                            
+                                printf("Enter base :");
+                                scanf_s("%d", &base);
+                            
+                                printf("Enter index :");
+                                scanf_s("%d", &index);
+                            
+                                while (index >= 1)
+                                {
+                                    result = result * base;
+                                    index--;
+                                }
+                                printf("%d", result);
+                                _getch();
+                            
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program41')">41.Function </a>
+                    <div id="program41" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void printline(void);  //declaration
+                            void printline(){
+                                for (int i = 0; i <= 40; i++)
+                                    printf("*");
+                                printf("\n");
+                                
+                            }
+                            void main(){
+                                printline();
+                                printf("Hello\n");
+                                printline();
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program42')">42.Function print 1- 10 </a>
+                    <div id="program42" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void printNumber(void);
+                            void printNumber(){
+                                int i;
+                                for (i = 1; i <= 10; i++)
+                                    printf(" %d \n",i);
+                            }
+                            void main(){
+                                printNumber();
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program43')">43.Function Even odd </a>
+                    <div id="program43" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void evenodd(int);
+                            void main(){
+                                int num;
+                                printf("Enter a number :");
+                                scanf_s("%d", &num);
+                                evenodd(num);
+                                _getch();
+                            }
+                            void evenodd(int num){
+                                if (num % 2 == 0){
+                                    printf("%d is even number ",num);
+                                }
+                                else {
+                                    printf("%d is odd number ",num);
+                                }
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program44')">44.Function Even odd </a>
+                    <div id="program44" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void simpleinterest(int,int,int);
+
+                            void main(){
+                                int p, n, r;
+                                printf("Enter principle amount , no of years , rate of interest :");
+                                scanf_s("%d%d%d", &p, &n, &r);
+                                simpleinterest(p,n,r);
+                                _getch();
+                            }
+                            void simpleinterest(int p ,int n,int r){
+                                
+                                int simpleint;
+                                simpleint = (p * n * r) / 100;
+                                printf("%d", simpleint);
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program45')">45.Function Swap number </a>
+                    <div id="program45" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void swapping(int, int);
+
+                            void swapping(int, int);
+
+                            void main(){
+                                int num1, num2 ;
+                                printf("Enter two numbers ");
+                                scanf_s("%d%d", &num1, &num2);
+                                swapping(num1,num2);
+                                _getch();
+                            }
+                            void swapping(int num1,int num2){
+                                int temp;
+                                temp =num1;
+                                num1 = num2;
+                                num2 = temp;
+                                printf("after swapping %d %d", num1, num2);
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program46')">46.Function Factorial </a>
+                    <div id="program46" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void factorial(int);
+                            void factorial(int x){
+                                int fact = 1;
+                                for (int i = x; i >= 1; i--)
+                                    fact = fact * i;
+                                    printf("factorial is %d", fact);
+                            }
+                            void main(){
+                                int num;
+                                printf("Enter number :");
+                                scanf_s("%d", &num);
+                                factorial(num);
+
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program47')">47.Accept and print number </a>
+                    <div id="program47" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void acceptNumber(void); //declare
+                            void acceptNumber(){
+                                int num;
+                                printf("Enter number :");
+                                scanf_s("%d", &num);
+
+                                printf("%d", num);
+                            }
+                            void main(){
+                                acceptNumber();
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program48')">48.Practice test : Menu Driven Program </a>
+                    <div id="program48" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                char option;
+                                int num,fact=1 ,sqr;
+                                char s_option;
+                            
+                                do {
+                                    printf("Enter a number :");
+                                    scanf_s("%d", &num);
+                                    printf("Enter your choice :\n a) for Find Factorial \n b) for find square \n e for exit \n");
+                                    fflush(stdin);
+                                    option = getchar();
+                            
+                                    switch (option)
+                                    {
+                                    case 'a':
+                                        for (int i = num; i >= 1; i--){
+                                            fact = fact * i;
+                                        }
+                                        printf("factorial is : %d", fact);
+                                        break;
+                                    case 'b':
+                                        sqr = num*num;
+                                        printf("Square is :%d", sqr);
+                                        break;
+                            
+                                    case 'e':
+                                        exit(0);
+                            
+                                    default:
+                                        printf("invalid input");
+                                        break;
+                                    }
+                                    printf("\ndo you want to contuniue enter y ?");
+                                    fflush(stdin);
+                                    s_option = getchar();
+                                } while (s_option == 'y');
+                            
+                                
+                                _getch();
+                              
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program49')">49.Practice test : Number and Key Problem </a>
+                    <div id="program49" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num, key,last_digit;
+                                int counter = 0;
+                                //int rem = 0;
+                            
+                                printf("Enter Number :");
+                                scanf_s("%d", &num);
+                            
+                                printf("Enter Key :");
+                                scanf_s("%d", &key);
+                            
+                                while (num > 0)
+                                {
+                                    last_digit = num % 10;
+                                    if (last_digit == key){
+                                        counter = counter + 1;
+                                    }
+                                    num = num / 10;
+                                }
+                                printf("%d", counter);
+                                    
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program50')">50.Practice test : sum of lower and upper limit </a>
+                    <div id="program50" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main() {
+                                int i, sum = 0,lower,upper;
+                            
+                                printf("Enter lower limit :");
+                                scanf_s("%d", &lower);
+                            
+                                printf("Enter upper  limit :");
+                                scanf_s("%d", &upper);
+                            
+                                for (i = lower; i <= upper; i++){
+                                    if (i % 2 == 0){
+                                        sum = sum + i;
+                                    }
+                                }
+                                printf("sum is %d", sum);
+                                _getch();
+                            
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program51')">51.Practice test :check sum is divisible by 5 </a>
+                    <div id="program51" class="program-description">
+                        <p> Functions !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code>                           #include &lt;stdio.h&gt;
+                            #include &lt;conio.h&gt;
+                            void main(){
+                                int num,reminder,sum=0;
+                            
+                                printf("Enter 4 digit number :");
+                                scanf_s("%4d", &num);
+                            
+                                if (num < 0){
+                                    printf("invalid");
+                                    exit(0);
+                                }
+                                while (num != 0)
+                                {
+                                    reminder = num % 10;
+                                    sum += reminder;
+                                    num /= 10;
+                                }
+                                if (sum % 3 == 0 && sum % 5 == 0){
+                                    printf("Sum is divisible by 5 and 3");
+                                }
+                                else {
+                                    printf("not divisible by 3 and 5");
+                                }
+                                
+                            
+                                _getch();
+                            }
+                             </code></pre>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleProgram('program51')"> Wake up,Eat,Code Repeat ! </a>
+                    <div id="program51" class="program-description">
+                        <p> for other content stay tune !</p>
+                        <!-- <p>You can add more details about the program here.</p> -->
+                        <p>Code example:</p>
+                        <pre><code> 
+                            This is Static(html,css,javascript) base website 
+                            that provides the basic practice programs in c programming language.
+                            
+                             </code></pre>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleProgram(programId) {
+        var programs = document.getElementsByClassName("program-description");
+        var program = document.getElementById(programId);
+
+        // Check if the current program is already open
+        var isCurrentProgramOpen = program.style.display === "block";
+
+        // Close all program descriptions
+        for (var i = 0; i < programs.length; i++) {
+            programs[i].style.display = "none";
+        }
+
+        // If the current program was not open, open it
+        if (!isCurrentProgramOpen) {
+            program.style.display = "block";
+        }
+    }
+    </script>
+</body>
+</html>

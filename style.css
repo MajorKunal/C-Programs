@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.5)), url(bg.png);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    width: 80%;
+    margin: auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute; /* Positioning within the banner */
+    top: 0; /* Aligns the navbar to the top of the banner */
+    left: 50%; /* Centers the navbar horizontally */
+    transform: translateX(-50%); /* Corrects the centering offset */
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 30px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* .nav-menu li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+} */
+.main-text {
+    position: absolute; /* Position it absolutely within the parent container */
+    top: 50%; /* Vertically center the text */
+    right: 15%; /* Position it towards the right edge of the screen */
+    transform: translateY(-50%); /* Correct vertical centering by adjusting its own height */
+    text-align: right; /* Align text to the right */
+    color: white; /* Text color for visibility */
+}
+
+.main-text h1 {
+    font-size: 68px; /* Larger font size for the main heading */
+    margin-bottom: 0px; /* Space below the main heading */
+    font-weight: 1500;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), /* Pink glow effect */
+                 0 0 20px rgba(255, 0, 255, 0.8),
+                 0 0 30px rgba(255, 0, 255, 0.8),
+                 0 0 40px rgba(255, 0, 255, 1),
+                 0 0 50px rgba(255, 0, 255, 1),
+                 0 0 60px rgba(255, 0, 255, 1);
+}
+
+.main-text .sub-text {
+    margin-top: 0.1px;
+    font-size: 14px; /* Smaller font size for the subtext */
+    color:white; /* Lighter gray color for the subtext */
+}
+.main-text a {
+    margin-top: 20PX;
+    display: inline-block;
+    color: white;
+    background: #bc0acc;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.main-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.main-text a.ctaa {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+.main-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.main-text p{
+    margin-top: 15px;
+    font-size: 13px; /* Smaller font size for the subtext */
+    color:white; /* Lighter gray color for the subtext */
+    text-shadow: 0 0 10px rgba(3, 3, 3, 0.8)
+}
